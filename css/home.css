@@ -34,6 +34,7 @@
 
 #banner .wrapper .banner_content p {
     font-size: var(--fs-24);
+    font-family: var(--ff-headlandone);
 }
 
 #banner .wrapper .banner_button {
@@ -133,7 +134,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8%;    
+    padding: 8%;   
+     
+}
+
+#choose .choose_content ul li {
+    font-family: "Headland One", serif;
 }
 
 /*card_section starts*/
@@ -181,6 +187,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-headlandone);
 }
 
 .box1{
@@ -252,6 +259,7 @@ button .primary {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-headlandone);
 }
 
 .box2{
@@ -301,6 +309,7 @@ button .primary {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-headlandone);
 }
 
 .box3{
@@ -358,6 +367,7 @@ button .primary {
 #safety .safety_wrapper .safety_content p{
     font-size: var(--fs-32);
     width: 100%;
+    font-family: var(--ff-headlandone);
 }
 
 #safety .safety_wrapper .safety_content .btn {
@@ -500,7 +510,8 @@ button .primary {
 }
 
 #tips .tips_wrapper .tips_left .tips_content1 h1 {
-    margin-left: -15%; 
+    margin-right: 5%;
+
 }
 
 #tips .tips_wrapper .tips_right .tips_content2 h1{
@@ -510,6 +521,7 @@ button .primary {
 #tips .tips_wrapper .tips_left .tips_content1 p,
 #tips .tips_wrapper .tips_right .tips_content2 p {
     font-size: var(--fs-32);
+    font-family: var(--ff-headlandone);
 }
 
 #tips .tips_wrapper .tips_left .tips_content1 p {
@@ -540,6 +552,7 @@ button .primary {
     background-color:white;
     display: flex;
     justify-content: center;
+
     /* background-color: cadetblue; */
 }
 
@@ -585,9 +598,8 @@ button .primary {
     justify-content: center;  
     align-items: center;
     gap: 30px;
+    margin-top: 6%;
 }
-
-
 
 /*box_1 starts*/
 #users_share .users_share_wrapper .users_exp .box_1 {
@@ -634,8 +646,9 @@ button .primary {
 }
 
 #users_share .users_share_wrapper .users_exp .box_1 p {
-    font-size: var(--fs-32);
+    font-size: 30px;
     margin-top: 5%;
+    font-family: "Headland One", serif;
 }
 
 #users_share .users_share_wrapper .users_exp .box_1 h4 {
@@ -647,6 +660,7 @@ button .primary {
     font-size: var(--fs-24);
     font-weight: lighter;
     margin-top: -4%;
+    font-family: var(--ff-headlandone);
 }
 /*box_1 ends*/
 
@@ -696,8 +710,9 @@ button .primary {
 }
 
 #users_share .users_share_wrapper .users_exp .box_2 p {
-    font-size: var(--fs-32);
+    font-size: 30px;
     margin-top: 5%;
+    font-family: var(--ff-headlandone);
 }
 
 #users_share .users_share_wrapper .users_exp .box_2 h4 {
@@ -709,11 +724,12 @@ button .primary {
     font-size: var(--fs-24);
     font-weight: lighter;
     margin-top: -4%;
+    font-family: var(--ff-headlandone);
 }
 
 
 .arrow {
-    background-color: #a0d468;
+    background-color:var(--primary-color);
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -723,7 +739,8 @@ button .primary {
   }
   
   .arrow:hover {
-    background-color: #8cc152;
+    background-color:var(--secondary-color);
+    color: black;
   }
   
   .left-arrow {
@@ -739,15 +756,6 @@ button .primary {
     top: 50%;
     transform: translateY(-50%);
   }
-
-
-
-/*box_2 ends*/
-/* .slider {
-    width: 90%;
-    height: 25vh;
-    background-color:rgb(153, 0, 255);
-} */
 
 /*users_share ends*/
 
@@ -787,6 +795,7 @@ button .primary {
 .footer .footer_wrapper .footer_one h4 {
     font-size: var(--fs-24);
     gap: 30px;
+    font-family: var(--ff-lemon);
 }
 .footer .footer_wrapper .footer_one ul {
     font-size: var(--fs-24);
@@ -800,13 +809,14 @@ button .primary {
     font-size: var(--fs-24);
     text-decoration: none;
     color: var(--tertiary-color);
+    font-family: var(--ff-poppins);
 }
 
 .footer .footer_wrapper .footer_one p {
     font-size: var(--fs-20);
     color: var(--tertiary-color);
-    /* width: 90%; */
-    margin-top: 17%;
+    margin-top: 6%;
+    font-family: var(--ff-poppins);
 }
 
 .footer .footer_wrapper .footer_two {
@@ -823,6 +833,8 @@ button .primary {
 .footer .footer_wrapper .footer_two h4 {
     font-size: var(--fs-24);
     gap: 30px;
+    font-family: var(--ff-lemon);
+    margin-right: 43%;
 }
 .footer .footer_wrapper .footer_two ul {
     font-size: var(--fs-24);
@@ -836,6 +848,7 @@ button .primary {
     font-size: var(--fs-24);
     text-decoration: none;
     color: var(--tertiary-color);
+    font-family: var(--ff-poppins);
 }
 
 .footer .footer_wrapper .footer_three {
@@ -851,11 +864,13 @@ button .primary {
 
 .footer .footer_wrapper .footer_three p{
     font-size: var(--fs-24);
+    font-family: var(--ff-headlandone);
 }
 .footer .footer_wrapper .footer_three h4{
     font-size: var(--fs-20);
     width: 100%;
     margin-left: 5%;
+    font-family: var(--ff-poppins);
 }
 .footer .footer_wrapper .footer_three h3{
     font-size: var(--fs-32);
@@ -872,14 +887,16 @@ button .primary {
 
 .footer .footer_wrapper .footer_three .button {
     display: flex;
-    gap:20px;
+    gap:30px;
     justify-content: center;  
     align-items: center;
     flex-direction: column;
 }
 
+/*footer ends*/ 
 
-/*footer ends*/
+
+
 
 @media only screen and (max-width:1496px){
     header nav .wrapper h4{
@@ -1154,6 +1171,12 @@ button .primary {
     }
 }
 
+@media only screen and (max-width:1099px){
+    #banner .wrapper .banner_button {
+        width: 280%;
+    }
+}
+
 @media only screen and (max-width:973px){
     #banner .wrapper .banner_button .btn1 ,
     #banner .wrapper .banner_button .btn2 {
@@ -1220,7 +1243,11 @@ button .primary {
 }
 
 
-
+@media only screen and (max-width:418px){
+    #banner .wrapper .banner_button {
+        width: 350%;
+    }
+}
 
 
 

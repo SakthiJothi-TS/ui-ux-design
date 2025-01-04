@@ -1,7 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lemon", serif;
 }
 
 :root {
@@ -19,12 +25,17 @@
     --fw-bold:700;
     --fw-semibold:600;
     --fw-regular:400;
+    --ff-lemon:"Lemon", serif;
+    --ff-headlandone:"Headland One", serif;
+    --ff-poppins: "Poppins", serif;
 }
 
 header {
     width: 100%;
     height: 10%;
     background-color:white;
+    font-family: var(--ff-lemon);
+      
 }
 
 header nav {
@@ -80,6 +91,27 @@ header  nav .wrapper ul {
     gap: 80px;
     list-style: none;
 }
+
+header  nav .wrapper ul li .active{
+
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+.home::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: #3b240b; /* Dark brown color */
+    transition: width 0.3s ease;
+    margin-top: 5px;
+  }
+  
+  .home:hover::after {
+    width: 100%;
+  }
 
 header  nav .wrapper ul li a{
     display: flex;
@@ -199,6 +231,7 @@ header nav .wrapper label {
         margin-left: 20%;
     }
 }
+
 
 @media only screen and (max-width:1000px){
     header nav .wrapper h4{
