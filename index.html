@@ -7,6 +7,7 @@
     <title>solo travel for disabled person-Home Page</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="./Src/Image/logo_solostride.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -16,18 +17,17 @@
         <nav>
             <div class="wrapper">
                 <div class="my_logo">
-                    <img src="./Src/Image/logo_solostride.png" alt="logo_img">
+                    <a href="./index.html"><img src="./Src/Image/logo_solostride.png" alt="logo_img"></a>
                     <h4 class="logo">SoloStride</h4>
                 </div>
-
                 <input type="checkbox" name="" id="nav-btn">
                 <label for="nav-btn" class="nav-icon"><i class="bi bi-list"></i></label>
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="./benefits.html">Benefits</a></li>
-                    <li><a href="./bookings.html">Bookings</a></li>
-                    <li><a href="./about_us.html">About Us</a></li>
-                    <li><a href="./contact_us.html">Contact Us</a></li>
+                    <li><a class="blink" href="./benefits.html">Benefits</a></li>
+                    <li><a class="blink" href="./bookings.html">Bookings</a></li>
+                    <li><a class="blink" href="./about_us.html">About Us</a></li>
+                    <li><a class="blink" href="./contact_us.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -77,10 +77,10 @@
                     <div class="card_1">
                         <img src="./Src/Image/card_img1.png">
                         <h3>Seamless Travel Assistance Anywhere</h3>
-                        <p>Request help anytime, anywhere, for smooth and stress-free travel.</p>
+                        <p>Request help anytime,anywhere,for smooth travel.</p>
                         <div class="box1">
                             <button class="primary">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFF00"
+                                <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFF00"
                                     class="bi bi-star-fill" viewBox="0 0 16 16">
                                     <path
                                         d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
@@ -205,7 +205,7 @@
                             </button>
                         </div>
                     </div>
-        </section>
+        </section> 
 
         <section id="safety">
             <div class="safety_wrapper">
@@ -309,44 +309,50 @@
                 <div class="footer_one">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Home</a></li><br>
-                        <li><a href="#">About</a></li><br>
-                        <li><a href="#">Tips</a></li><br>
-                        <li><a href="#">Stories</a></li><br>
-                        <li><a href="#">Blog</a></li><br>
-                        <li><a href="#">Support</a></li><br>
+                        <li><a href="./index.html">Home</a></li><br>
+                        <li><a href="./benefits.html">Benefits</a></li><br>
+                        <li><a class="active" href="#">Bookings</a></li><br>
+                        <li><a href="./about_us.html">About Us</a></li><br>
+                        <li><a href="./contact_us.html">Contact Us</a></li><br>
                     </ul>
-                    <p>Privacy | Terms | Accessibility | Disclaimer</p>
+                    <p><a href="./index.html">Privacy Policy</a> | <a href="./index.html">Terms of Service</a></p>
+                    
                 </div>
 
                 <div class="footer_two">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Accessibility Guides</a></li><br>
-                        <li><a href="#">Safety Tips</a></li><br>
-                        <li><a href="#">Destination Guides</a></li><br>
-                        <li><a href="#">Mobility Aid Rentals</a></li><br>
+                        <li><a href="./benefits.html#banner">Explore More</a></li><br>
+                        <li><a href="./index.html#safety">Safety Tips</a></li><br>
+                        <li><a href="./index.html#choose">Travel Experience</a></li><br>
+                        <li><a href="./bookings.html#app">Step by Step</a></li><br>
+                        <li><a href="./index.html#users_share">Testimonial</a></li><br>
                     </ul>
                 </div>
 
                 <div class="footer_three">
                     <h3>Follow Us</h3>
-                    <!-- <i class="bi bi-instagram"></i> -->
+               
                     <div class="icons">
-                        <img src="./Src/Image/facebook icon.svg" alt="fb" class="fb">
-                        <img src="./Src/Image/whatsapp.svg " alt="wa" class="wa">
-                        <img src="./Src/Image/insta icon.svg" alt="insta" class="insta">
-                        <img src="./Src/Image/linkedin icon.png" alt="li" class="linkedin">
+                        <a href="https://www.facebook.com/login/" target="_blank"><img src="./Src/Image/facebook icon.svg" alt="fb" class="fb"></a>
+
+                        <a href="https://api.whatsapp.com/" target="_blank"><img src="./Src/Image/whatsapp.svg " alt="wa" class="wa"></a>
+
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><img src="./Src/Image/insta icon.svg" alt="insta" class="insta"></a>
+
+                        <a href="https://www.linkedin.com/in/sakthi-jothi-447870264/" target="_blank"><img src="./Src/Image/linkedin icon.png" alt="li" class="linkedin"></a>
                     </div>
 
                     <div class="button">
-                        <img src="./Src/Image/apple_box_icon.png" alt="apple">
-                        <img src="./Src/Image/playstore_box_icon.png" alt="google">
+                        <a href="https://appstoreconnect.apple.com/login" target="_blank"><img src="./Src/Image/apple_box_icon (1).png" class="img1" alt="apple"></a>
+
+                        <a href="https://play.google.com/store/games?device=windows&amp;pli=1" target="_blank"> <img src="./Src/Image/playstore_box_icon (1).png" class="img2" alt="google"></a>
+
                     </div>
 
-                    <p>Email: support@yourwebsite.com</p>
-                    <p>Phone: +1 (123) 456-7890</p>
-                    <h4>COPYRIGHT@2024 SOLOSTRIDE. ALL RIGHT RESERVED</h4>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=new"  class="p1" target="_blank">Email:solostride@yourwebsite.com</a></p>
+                    <p><i class="bi bi-c-circle"></i> 2025 SoloStride.All Rights Reserved.</p>
+                    <p>Designed & Developed By <a href="https://www.behance.net/sakthijothi" class="p3" target="_blank">SakthiJothi</a></p>
                 </div>
 
             </div>
@@ -354,7 +360,7 @@
 
     </footer>
 
-    <!--footer end-->
+<!--footer end-->
 </body>
 
 </html>
