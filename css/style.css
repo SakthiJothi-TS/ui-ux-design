@@ -1,7 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 *{
@@ -11,8 +15,8 @@
 }
 
 :root {
-    --fs-75:75px;
-    --fs-48:48px;
+    /* --fs-75:75px;
+    --fs-48:48px; */
     --fs-46:46px;
     --fs-40:40px;
     --fs-36:36px;
@@ -26,6 +30,7 @@
     --fw-semibold:600;
     --fw-regular:400;
     --ff-lemon:"Lemon", serif;
+    
     --ff-headlandone:"Headland One", serif;
     --ff-poppins: "Poppins", serif;
 }
@@ -35,7 +40,7 @@ header {
     height: 10%;
     background-color:white;
     font-family: var(--ff-lemon);
-      
+    font-weight:lighter;    
 }
 
 header nav {
@@ -66,11 +71,11 @@ header  nav .wrapper .my_logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 header  nav .wrapper h4 {
-    font-size: 4opx;
+    font-size: 20px;
     color:rgb(0, 0, 0);
     /* margin-left: -30%; */
 }
@@ -92,27 +97,6 @@ header  nav .wrapper ul {
     list-style: none;
 }
 
-header  nav .wrapper ul li .active{
-
-    text-transform: capitalize;
-    position: relative;
-    display: inline-block;
-}
-
-.home::after {
-    content: '';
-    display: block;
-    height: 4px;
-    width: 0;
-    background-color: #3b240b; /* Dark brown color */
-    transition: width 0.3s ease;
-    margin-top: 5px;
-  }
-  
-  .home:hover::after {
-    width: 100%;
-  }
-
 header  nav .wrapper ul li a{
     display: flex;
     justify-content:space-between;
@@ -123,206 +107,180 @@ header  nav .wrapper ul li a{
     font-size: var(--fs-20);
 }
 
+nav .wrapper ul li a.active {
+    text-decoration: underline;
+}
+.blink{
+    background: none;
+    color: #000000;
+    position: relative;
+    gap: 20px;
+}
+.blink::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #040404;
+    left: 50%;
+    bottom: 0;
+    transition: all 0.3s ease;
+    gap: 10px;
+}
+.blink:hover::after {
+    width: 100%;
+    left: 0;
+    gap: 30px;
+}
+
 #nav-btn .nav-icon {
-    font-size: 32px;
+    font-size: 40px;
     color: black;
     display: none;
 }
 
 header nav .wrapper label {
     display: none;
+    font-size:40px;
 }
 
 
 
 
 
- 
-@media only screen and (max-width:1496px){
-    header nav .wrapper .logo {
-        margin-left:1%;
-}
-    .footer .footer_wrapper .footer_one p{
-        margin-top: -85%;
-}
-}
+/*media query starts*/
 
-@media only screen and (max-width:1495px){
-    header nav .wrapper label{
-        display: none;
- }
- 
-}
+/*header starts*/
 
-@media only screen and (max-width:1440px){
-    header nav .wrapper h4{
-        margin-left:-10%;
-    }
-}
-
-
-@media only screen and (max-width:1333px)
-{
-    .nav-icon{
-        display: block;
-        font-size: 40px;
-        color: var(--tertiory-color);
-    }
-
+@media only screen and (max-width: 1496px) {
     header nav .wrapper ul {
-        background-color: var(--secondary-color);
-        color: white;
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+
+    header .my_logo {
+        gap: 40px; 
+    }
+
+    header .logo {
+        width: 15%; 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header nav .wrapper ul {
         position: absolute;
-        top:40vh;
-        top:60px;
-        /* left:40%; */
-        right: 100%;
+        top: 10vh;
         width: 30%;
-        height: -90vh;
+        left: -100%;
+        height: 80vh;
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        padding: 40px 0px;
-        transition-duration: 0.07s;
+        background-color: var(--secondary-color);
+        padding: 30px 60px;
+        transition-duration: 0.7s;
+        z-index: 1;
+        box-shadow: 0 10px 16px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;  
     }
 
-    header nav .wrapper ul li {
-        margin-left:20%;
-    }
-    header nav .wrapper .logo {
-        margin-left: 3%;
+    header nav .wrapper label {
+        display: block; 
     }
 
     #nav-btn:checked ~ ul {
-        left: 0px;
-    } 
-    header nav .wrapper label {
-        display: block;
-    }
-  
+            left: 0px;
+        }   
 }
 
-@media only screen and (max-width:1300px)
-{
-    header nav .wrapper h4{
-        margin-left:-15%;
+@media only screen and (max-width: 768px) {
+    header nav .wrapper {
+        align-items: flex-start;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 10%;
+
+    header .my_logo {
+        width: 20%; 
     }
 }
 
-@media only screen and (max-width:1170px)
-{
-    header nav .wrapper h4{
-        margin-left:-20%;
+@media only screen and (max-width: 600px) {
+    header nav .wrapper {
+        align-items: flex-start;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 15%;
+
+    header .my_logo {
+        margin-left: 2%;
+        width: 18%; 
     }
 }
 
-@media only screen and (max-width:1150px)
-{
-    header nav .wrapper h4{
-        margin-left:-25%;
+@media only screen and (max-width: 576px) {
+    header .my_logo {
+        width: 25%;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 20%;
+
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper {
+        align-items: flex-start;
+    }
+
+    header .my_logo {
+        margin-left: 2%;
+        width: 18%; 
     }
 }
 
-
-@media only screen and (max-width:1000px){
-    header nav .wrapper h4{
-        margin-left:-35%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 35%;
+@media only screen and (max-width: 480px) {
+    header nav .wrapper ul {
+        gap: 40px;
     }
 }
 
-
-
-@media only screen and (max-width:835px){
-    header nav .wrapper h4{
-        margin-left:-50%;
+@media only screen and (max-width: 420px){
+    header nav .wrapper ul {
+        gap: 40px;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 50%;
-    }
-}
-
-@media only screen and (max-width:800px){
-    header nav .wrapper h4{
-        margin-left:-60%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 60%;
+    header nav .wrapper ul li a{
+        gap: 35px;
+        font-size: 80%;
     }
 }
 
-@media only screen and (max-width:750px){
-    header nav .wrapper h4{
-        margin-left:-70%;
+@media only screen and (max-width: 380px) {
+    header nav .wrapper {
+        align-items: flex-start;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 70%;
+
+    header .my_logo {
+        margin-left: 6%;
+        width: 18%; 
+    }
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper ul li a{
+        gap: 40px;
+        font-size: 75%;
     }
 }
 
-
-@media only screen and (max-width:680px){
-    header nav .wrapper h4{
-        margin-left:-80%;
+@media only screen and (max-width: 330px) {
+    header nav .wrapper ul {
+        gap: 40px;
     }
-    header nav .wrapper .my_logo img{
-        margin-left: 80%;
-    }
-}
-
-@media only screen and (max-width:650px){
-    header nav .wrapper h4{
-        margin-left:-90%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 90%;
+    header nav .wrapper ul li a{
+        gap: 40px;
+        font-size: 75%;
     }
 }
+/*header ends*/
 
-@media only screen and (max-width:625px){
-    header nav .wrapper h4{
-        margin-left:-150%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 150%;
-    }
-}
-
-
-@media only screen and (max-width:500px){
-    header nav .wrapper h4{
-        margin-left:-180%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 180%;
-    }
-}
-
-@media only screen and (max-width:450px){
-    header nav .wrapper h4{
-        margin-left:-220%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 220%;
-    }
-}
-
-@media only screen and (max-width:400px){
-    header nav .wrapper h4{
-        margin-left:-250%;
-    }
-    header nav .wrapper .my_logo img{
-        margin-left: 250%;
-    }
-}
+/*media query ends*/
